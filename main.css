@@ -25,4 +25,16 @@ body{
     #intro{
         width:90% !important;
     }
+    .service-row{
+        width:100% !important;
+        text-align: center;
+
+    }
+}
+
+@media(max-width: 576px){
+    .icon-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
 }
