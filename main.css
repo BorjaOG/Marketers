@@ -19,16 +19,103 @@ body{
     opacity: 0.9;
 }
 
+.map{
+    background:url(./images/map.png);
+    width:100%;
+    height: 500px;
+}
+#local{
+    background-color: f3f3f3;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width:50%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
 
+#numbers-local div{
+    padding:0 20px 0 0;
+    height: 48px;
+}
 
+#numbers-local div:not(:last-child){
+    border-right:2px solid #3f3f3f;
+
+}
+#numbers-local div:not(:first-child){
+    padding-left: 25px;
+}
+#numbers-local p{
+    margin:0;
+}
+
+#bg-contacts{
+    position:relative;
+    top:-350px;
+}
+
+#section-contact{
+    background-color: rgb(173, 165, 206) ;
+    min-height: 500px;
+    position: relative;
+}
+
+#container-form{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%, -50%) ;
+    background:#fbfafa;
+    border-radius:5px;
+    max-width: 500px;
+}
+#tittle-form{
+    color:#3f3f3f;
+}
+
+footer{
+    background: rgb(173, 165, 206);
+    min-height: 100px; 
+}
+
+footer p{
+    color:#3f3f3f;
+    text-align: center;
+}
+#icons i{
+    font-size: 26px;
+    padding: 0 8px;
+    color: #3f3f3f;
+}
+
+@media(max-width:1200px){
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .wrapper{
+        width:90%;
+        margin:auto;
+        padding-top: 50px;
+    }
+}
 @media(max-width:768px){
-    #intro{
+    #intro, #team{
         width:90% !important;
     }
     .service-row{
         width:100% !important;
         text-align: center;
 
+    }
+    #team p{
+        display: none;
+    }
+    #bg-contacts{
+        top:320px;
     }
 }
 
