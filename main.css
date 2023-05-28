@@ -21,7 +21,7 @@ body{
 
 .map{
     background:url(./images/map.png);
-    width:100%;
+    width:62%;
     height: 500px;
 }
 #local{
